@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args) {
-
-
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Gra kółko i krzyżyk,\nPodaj rozmiar planszy na jakiej chcesz zagrać:");
@@ -23,8 +20,6 @@ public class TicTacToe {
 
         // Ustawienie pierwszego gracza
         char currentPlayer = 'x';
-
-
         while(true) {
             for(int i = 0; i < dimension; i++) {
                 for(int j = 0; j < dimension; j++) {
@@ -49,7 +44,6 @@ public class TicTacToe {
 
             System.out.println("Podaj współrzędną wiersza zaczynając od 0:");
             int x = sc.nextInt();
-
             System.out.println("Podaj współrzędną kolumny zaczynając od 0:");
             int y = sc.nextInt();
 
@@ -78,7 +72,6 @@ public class TicTacToe {
                         countO++;
                     }
                 }
-
                 if(countX == dimension) {
                     System.out.println("Wygrał X");
 
@@ -103,7 +96,6 @@ public class TicTacToe {
                         countO++;
                     }
                 }
-
                 if(countX == dimension) {
                     System.out.println("Wygrał X");
                     return;
@@ -126,7 +118,6 @@ public class TicTacToe {
                         countO++;
                     }
                 }
-
                 if (countX == dimension) {
                     System.out.println("Wygrał X");
                     return;
@@ -148,7 +139,6 @@ public class TicTacToe {
                         countO++;
                     }
                 }
-
                 if (countX == dimension) {
                     System.out.println("Wygrał X");
                     return;
@@ -170,7 +160,6 @@ public class TicTacToe {
                         }
                     }
                 }
-
                 if(!tableIsEmpty) {
                     System.out.println("Remis");
                     return;
