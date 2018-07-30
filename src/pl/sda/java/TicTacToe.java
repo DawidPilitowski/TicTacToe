@@ -1,6 +1,4 @@
 package pl.sda.java;
-
-
 import java.util.Scanner;
 
 public class TicTacToe {
